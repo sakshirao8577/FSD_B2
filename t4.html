@@ -1,0 +1,11 @@
+<script>
+    const emp=[{"name":"pqr","age":20},
+    {"name":"xyz","age":15},
+    {"name":"mno","age":18}]
+    var e=emp.sort((x,y)=>y.age-x.age)
+    for (e1 of e){
+        console.log(e1.name+" "+e1.age)
+    }
+    document.write(e[e.length-1].name+" "+e[e.length-1].age)
+    console.log(Math.max(...emp.map(e=>e.age)))
+</script>

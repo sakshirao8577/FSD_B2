@@ -1,0 +1,13 @@
+<html>
+<script>
+    var data={"FSD":[{"topic":"Node","content":"HTTP module"},
+    {"topic":"Express","content":"Middleware"}]}
+    var a=data.FSD[0][0].topic
+    var b=data.FSD[0][0].content
+    function func(){
+        document.getElementById("a").innerHTML=`<tr><td>topic</td><td>content</td></tr>
+        <tr><td>${a}</td><td>${b}</td></tr> <tr><td>Express</td><td>content</td></tr>`
+    }
+</script>
+<table id="a"></table>
+</html>

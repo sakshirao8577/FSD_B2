@@ -1,0 +1,17 @@
+<head>
+    <script>
+        var obj='{"name":"Dhriti","age":10,"dob":"2010-02-04"}'
+        var data=JSON.parse(obj);
+        function func(){
+            data.age=5
+            data["name"]="Dhyani"
+            var n="name"
+            data[n]="Dhyey"
+            document.getElementById("t1").innerHTML=`Name is ${data.name} <br> age is ${data.age}`
+            document.getElementById("t2").innerHTML=new Date(data.dob)
+        }
+    </script>
+    <button placeholder="Click Here" onclick="func()">Click me</button>
+    <h2 id="t1"></h2>
+    <h3 id="t2"></h3>
+</head>
