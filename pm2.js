@@ -1,0 +1,10 @@
+var p=require("path");
+var fs=require("fs");
+var mypath="myfile/first.txt";
+var d=p.dirname(mypath);
+fs.mkdirSync(d);
+var b=p.basename(mypath);
+fs.writeFileSync(b,"Path File System module example");
+var data=fs.readFileSync(b,"utf-8");
+fs.writeFileSync("dup.txt",data);
+fs.unlinkSync(b);
