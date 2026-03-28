@@ -14,7 +14,7 @@ http
       res.end(`<h1 style="color:red"><pre>${r}</pre></h1>`);
     }
     else if(req.url==="/about"){
-        var r=fs.readFileSync("img.png","utf-8");
+        var r=fs.readFileSync("img.png");
         res.writeHead(200, { "Content-type": "image/png" });
         res.end(r);
     }
